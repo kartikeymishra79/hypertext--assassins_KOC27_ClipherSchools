@@ -1,0 +1,22 @@
+# Programme to find the Prime Or Composite number in the given range
+num = int(input("Enter any number : "))
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            print(num, "is NOT a prime number")
+            break
+    else:
+        print(num, "is a PRIME number")
+elif num == 0 or 1:
+    print(num, "is a neither prime NOR composite number")
+else:
+    print(num, "is NOT a prime number it is a COMPOSITE number")
+
+# Range(11,15)
+#Then the status of each number in the range is :
+#11 is prime
+#12 is composite not prime
+#13 is prime
+#14 is composite
+#15 is composite
+#Count : 2 prime and 3 composite numbers in the range
